@@ -1,0 +1,168 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+.jumbotron {
+    height: 25em;
+}
+
+#logo {
+    text-align: center;
+}
+
+h1 {
+    font-size: 7em;
+}
+
+.row {
+    text-align: center;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+.navbar-nav .nav-link {
+    text-align: center;
+    padding: 5px;
+    width: 12em;
+    height: 50px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.navbar-brand {
+    margin: 0 10px;
+    padding: 0;
+}
+
+.lead {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    background: #000;
+}
+
+#jumboName {
+    margin: auto;
+    text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3), 4px 8px 4px rgba(0, 0, 0, 0.1), 6px 12px 6px rgba(0, 0, 0, 0.1);
+}
+
+a.nav-link.galleries:hover {
+    letter-spacing: 2px;
+    background: #e9ecef;
+    color: blue;;
+    transition: all 0.3s;
+}
+
+hr {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 10px 10px -14px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+    line-height: 35px;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+    width: 12em;
+    cursor: pointer;
+}
+
+.btn-one {
+    color: #FFF;
+    transition: all 0.3s;
+    position: relative;
+}
+.btn-one span {
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+.btn-one::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255,255,255,0.5);
+    border-bottom-color: rgba(255,255,255,0.5);
+    transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+    letter-spacing: 2px;
+    color: rgb(193, 245, 98);
+}
+
+.btn-one:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+}
+
+.glow-on-hover {
+    text-transform: uppercase;
+    background: #000;
+    color: #FFF;
+    width: 12em;
+    height: 50px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 5px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    transition: all 0.3s;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 5px;
+}
+
+.glow-on-hover:active {
+    color: #000;s
+}
+
+.glow-on-hover:hover {
+    letter-spacing: 2px;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+@media screen and (max-width: 1530px) {
+    h1 {
+      font-size: 5em;
+    }
+  }
