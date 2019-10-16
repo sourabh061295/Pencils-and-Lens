@@ -5,7 +5,9 @@ html {
 
 body {
     font-family: Philosopher;
-    background: #000;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 a {
@@ -46,18 +48,8 @@ footer {
     text-align: center;
 }
 
-#instadiv {
-    display: inline-block;
-    width: 15%;
-    transition: all 0.3s;
-}
-
-#instadiv:hover a{
-    color: #000;
-    text-decoration: none;
-}
-
 #instadiv:hover {
+    letter-spacing: 1px;;
     border-radius: 20px;
     border: 1px solid rgba(255,255,255,0.4);
     background: #e9ecef;
@@ -68,7 +60,7 @@ footer {
 }
 
 #copyright {
-    float: right;
+    text-align: right;
     margin-top: 15px;
     color: rgba(233,236,239,0.5);
 }
@@ -104,9 +96,9 @@ h1 {
 
 .card {
     height: 35em;
-    width: 10em;
+    width: 100%;
     margin: 10px;
-    background: #000;
+    background: inherit;
 }
 
 .card-img-overlay:hover {
@@ -173,6 +165,10 @@ h1 {
 
 #jumboName {
     text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3), 4px 8px 4px rgba(0, 0, 0, 0.1), 6px 12px 6px rgba(0, 0, 0, 0.1);
+}
+
+#jumboName:hover {
+    text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.4), 4px 8px 4px rgba(0, 0, 0, 0.2), 6px 12px 6px rgba(0, 0, 0, 0.2);
 }
 
 a.nav-link.galleries:hover {
