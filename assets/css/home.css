@@ -13,7 +13,7 @@ body {
 a {
     color: #e9ecef;
     text-decoration: none;
-    transition: all 0.3s;
+    transition: all 0.4s;
 }
 
 footer {
@@ -63,6 +63,7 @@ footer {
     text-align: right;
     margin-top: 15px;
     color: rgba(233,236,239,0.5);
+    transition: all 0.4s;
 }
 
 #copyright:hover {
@@ -87,11 +88,15 @@ h1 {
     letter-spacing: 1px;
 }
 
+.fas {
+    font-size: 0.7em;
+}
+
 .card-img-overlay {
     padding: 0;
     background-image: url("../../data/images/img3.jpg");
     background-size: cover;
-    transition: all 0.3s;
+    transition: all 0.4s;
 }
 
 .card {
@@ -112,10 +117,23 @@ h1 {
                 10px 10px 20px rgba(3, 252, 248, 0.3), -10px -10px 20px rgba(3, 252, 248, 0.3);
 }
 
+.card-img-overlay:hover .card-text {
+    display: block;
+}
+
 .card-title {
     text-align: center;
     margin: 10px;
     font-size: 5em;
+}
+
+.card-text {
+    color: rgba(0, 0, 0, 0.6);
+    display: none;
+    margin: 100px 20px;
+    padding: 0 20px;
+    font-size: 1.2em;
+    transition: all 0.4s;
 }
 
 .navbar-nav .nav-link {
@@ -129,7 +147,7 @@ h1 {
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #FFF;
-    transition: all 0.3s;
+    transition: all 0.4s;
 }
 
 .navbar-brand {
@@ -152,8 +170,9 @@ h1 {
     background-image: url("../../data/images/pencil_menu.png");
 }
 
-.activepage {
+#activepage {
     background: #e9ecef;
+    color: #000;
 }
 
 .links {
@@ -177,7 +196,7 @@ a.nav-link.galleries:hover {
     letter-spacing: 2px;
     background: #e9ecef;
     color: rgba(0, 0, 0, 0.8);;
-    transition: all 0.3s;
+    transition: all 0.4s;
 }
 
 hr {
@@ -207,7 +226,7 @@ button:focus {
     z-index: 0;
     border-radius: 5px;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    transition: all 0.3s;
+    transition: all 0.4s;
 }
 
 .glow-on-hover:before {
@@ -223,7 +242,7 @@ button:focus {
     height: calc(100% + 2px);
     animation: glowing 20s linear infinite;
     opacity: 0;
-    transition: opacity .3s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
     border-radius: 5px;
 }
 
@@ -251,6 +270,6 @@ button:focus {
     }
 
     .card-title {
-        font-size: 3em;
+        font-size: 4em;
     }
 }
