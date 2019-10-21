@@ -92,9 +92,20 @@ h1 {
     font-size: 0.7em;
 }
 
+#sketchcard {
+    background-image: url("../../data/images/sketch.png");
+}
+
+#photocard {
+    background-image: url("../../data/images/photo.png");
+}
+
+#giftcard {
+    background-image: url("../../data/images/portrait.png");
+}
+
 .card-img-overlay {
     padding: 0;
-    background-image: url("../../data/images/img3.jpg");
     background-size: cover;
     transition: all 0.4s;
 }
@@ -109,7 +120,7 @@ h1 {
 
 .card-img-overlay:hover {
     transform: scale(1.05);
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.3);
     background-blend-mode: lighten;
     color: #000;
     border-radius: 20px;
