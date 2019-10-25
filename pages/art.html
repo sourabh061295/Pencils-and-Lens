@@ -7,20 +7,23 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Local CSS stylesheets -->
     <link rel="stylesheet" href="../assets/css/home.css">
+    <link rel="stylesheet" href="../assets/css/galleries.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Expletus+Sans|Philosopher:400,700|Satisfy&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     
     <title>Art Collection</title>
 
     <!-- Adding icon to the title -->
     <link rel = "icon" href = "../data/images/art.png" type = "image/x-icon"> 
   </head>
-  <body>
+  <body class="animate fadeIn delay">
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top p-0">
@@ -52,14 +55,105 @@
 
     <!-- Jumbotron -->
     <div class="jumbotron">
-            <div id="jumboName">
-                <h1><i class="fas fa-pencil-ruler"></i> Art Collection</h1>
-                <hr>
-                <p class="lead">A world of pencil shades and colors.</p>
-            </div>
+        <div id="jumboName">
+            <h1><img src="../data/images/4.png" alt="" width="200px" height="200px"> Art Collection</h1>
+            <hr>
+            <p class="lead">A world of pencil shades and colors.</p>
+        </div>
     </div>
 
+    <!-- <div class="contents container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-4"><img class="img-thumbnail img-fluid p-0 mt-3" src="../data/images/sample.jpg"><div class="tile-title mt-2">title</div></div>
+            <div class="col-12 col-md-4"><img class="img-thumbnail img-fluid p-0 mt-3" src="../data/images/sample.jpg"><div class="tile-title mt-2">title</div></div>
+            <div class="col-12 col-md-4"><img class="img-thumbnail img-fluid p-0 mt-3" src="../data/images/sample.jpg"><div class="tile-title mt-2">title</div></div>
+            <div class="col-12 col-md-4"><img class="img-thumbnail img-fluid p-0 mt-3" src="../data/images/sample.jpg"><div class="tile-title mt-2">title</div></div>
+            <div class="col-12 col-md-4"><img class="img-thumbnail img-fluid p-0 mt-3" src="../data/images/sample.jpg"><div class="tile-title mt-2">title</div></div>
+            <div class="col-12 col-md-4"><img class="img-thumbnail img-fluid p-0 mt-3" src="../data/images/sample.jpg"><div class="tile-title mt-2">title</div></div>
+            <div class="col-12 col-md-4"><img class="img-thumbnail img-fluid p-0 mt-3" src="../data/images/sample.jpg"><div class="tile-title mt-2">title</div></div>
+            <div class="col-12 col-md-4"><img class="img-thumbnail img-fluid p-0 mt-3" src="../data/images/sample.jpg"><div class="tile-title mt-2">title</div></div>
+            <div class="col-12 col-md-4"><img class="img-thumbnail img-fluid p-0 mt-3" src="../data/images/sample.jpg"><div class="tile-title mt-2">title</div></div>
+        </div>
+    </div> -->
+
+
+    <!-- <div class="card-group">
+        <div class="col-8 col-md-4 card">
+            <img src="../data/images/sample.jpg" class="card-img-top">
+            <h6 class="card-title">Card title</h6>
+        </div>
+        <div class="col-8 col-md-4 card">
+            <img src="../data/images/sample.jpg" class="card-img-top">
+            <h6 class="card-title">Card title</h6>
+        </div>
+        <div class="col-8 col-md-4 card">
+            <img src="../data/images/sample.jpg" class="card-img-top">
+            <h6 class="card-title">Card title</h6>
+        </div>
+        <div class="col-8 col-md-4 card">
+            <img src="../data/images/sample.jpg" class="card-img-top">
+            <h6 class="card-title">Card title</h6>
+        </div>
+        <div class="col-8 col-md-4 card">
+            <img src="../data/images/sample.jpg" class="card-img-top">
+            <h6 class="card-title">Card title</h6>
+        </div>
+        <div class="col-8 col-md-4 card">
+            <img src="../data/images/sample.jpg" class="card-img-top">
+            <h6 class="card-title">Card title</h6>
+        </div>
+        <div class="col-8 col-md-4 card">
+            <img src="../data/images/sample.jpg" class="card-img-top">
+            <h6 class="card-title">Card title</h6>
+        </div>
+        <div class="col-8 col-md-4 card">
+            <img src="../data/images/sample.jpg" class="card-img-top">
+            <h6 class="card-title">Card title</h6>
+        </div>
+        <div class="col-8 col-md-4 card">
+            <img src="../data/images/sample.jpg" class="card-img-top">
+            <h6 class="card-title">Card title</h6>
+        </div>
+    </div> -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-md-4"><img class="myImg img-thumbnail" src="../data/images/photo.png"><div class="tile-title mt-2">title</div></div>
+            <div class="col-8 col-md-4"><img class="myImg img-thumbnail" src="../data/images/sample.jpg"><div class="tile-title mt-2">title</div></div>
+            <div class="col-8 col-md-4"><img class="myImg img-thumbnail" src="../data/images/photo.png"><div class="tile-title mt-2">title</div></div>
+            <div class="col-8 col-md-4"><img class="myImg img-thumbnail" src="../data/images/sample.jpg"><div class="tile-title mt-2">title</div></div>
+            <div class="col-8 col-md-4"><img class="myImg img-thumbnail" src="../data/images/sample.jpg"><div class="tile-title mt-2">title</div></div>
+            <div class="col-8 col-md-4"><img class="myImg img-thumbnail" src="../data/images/sample.jpg"><div class="tile-title mt-2">title</div></div>
+            <div class="col-8 col-md-4"><img class="myImg img-thumbnail" src="../data/images/sample.jpg"><div class="tile-title mt-2">title</div></div>
+            <div class="col-8 col-md-4"><img class="myImg img-thumbnail" src="../data/images/sample.jpg"><div class="tile-title mt-2">title</div></div>
+            <div class="col-8 col-md-4"><img class="myImg img-thumbnail" src="../data/images/sample.jpg"><div class="tile-title mt-2">title</div></div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+            
+                <!-- The Close Button -->
+                <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+            
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+            
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-between">
+                <a href="https://instagram.com/pencils_and_lens?igshid=qarhk8idf8gp" target="_blank" id="instadiv" class="col-2 col-md-4 col-lg-4 col-xl-3"><img src="../data/images/insta.png" width="60px" height="60px"><span class="d-none d-md-inline-block"> Visit Instagram profile</span></a>
+                <div id="copyright" class="col-3"><small>&copy; Sourabh Kulkarni</small></div>
+            </div>
+        </div>
+    </footer>
+
     <!-- Optional JavaScript -->
+    <script src="../assets/js/galleries.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

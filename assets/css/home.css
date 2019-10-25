@@ -88,10 +88,6 @@ h1 {
     letter-spacing: 1px;
 }
 
-.fas {
-    font-size: 0.7em;
-}
-
 #sketchcard {
     background-image: url("../../data/images/sketch.png");
 }
@@ -114,8 +110,7 @@ h1 {
     height: 35em;
     width: 100%;
     margin: 10px;
-    background: inherit;
-    
+    background: inherit;   
 }
 
 .card-img-overlay:hover {
@@ -284,3 +279,39 @@ button:focus {
         font-size: 4em;
     }
 }
+
+.animate {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.delay {
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+    }
+    @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+    }
+    .fadeIn {
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+    }
