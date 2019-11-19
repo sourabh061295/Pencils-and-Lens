@@ -194,11 +194,12 @@ h1 {
 }
 
 #jumboName {
+    transition: all 0.4s;
     text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3), 4px 8px 4px rgba(0, 0, 0, 0.1), 6px 12px 6px rgba(0, 0, 0, 0.1);
 }
 
 #jumboName:hover {
-    text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.4), 4px 8px 4px rgba(0, 0, 0, 0.2), 6px 12px 6px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
 }
 
 a.nav-link.galleries:hover {

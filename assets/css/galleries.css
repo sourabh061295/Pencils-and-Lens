@@ -16,7 +16,7 @@ div.col-8.col-md-4 {
 .myImg {
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s;
     width: 500px;
     height: 300px;
     object-fit: cover;
@@ -26,10 +26,10 @@ div.col-8.col-md-4 {
 .myImg:hover {
     opacity: 0.7;
     transform: scale(1.05);
-    box-shadow: 5px 5px 10px rgba(255, 255, 0, 0.6), -5px -5px 10px rgba(255, 255, 0, 0.6),
-                5px -5px 10px rgba(255, 255, 0, 0.6), -5px 5px 10px rgba(255, 255, 0, 0.6),
-                10px 10px 10px rgba(255, 255, 0, 0.3), -10px -10px 10px rgba(255, 255, 0, 0.3),
-                10px -10px 10px rgba(255, 255, 0, 0.3), -10px 10px 10px rgba(255, 255, 0, 0.3);
+    box-shadow: 5px 5px 10px rgba(0, 255, 0, 0.6), -5px -5px 10px rgba(0, 255, 0, 0.6),
+                5px -5px 10px rgba(0, 255, 0, 0.6), -5px 5px 10px rgba(0, 255, 0, 0.6),
+                10px 10px 10px rgba(0, 255, 0, 0.3), -10px -10px 10px rgba(0, 255, 0, 0.3),
+                10px -10px 10px rgba(0, 255, 0, 0.3), -10px 10px 10px rgba(0, 255, 0, 0.3);
 }
   
 /* The Modal (background) */
@@ -81,7 +81,7 @@ div.col-8.col-md-4 {
     color: #f1f1f1;
     font-size: 40px;
     font-weight: bold;
-    transition: 0.3s;
+    transition: all 0.3s;
 }
 
 .close:hover,
