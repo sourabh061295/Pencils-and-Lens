@@ -133,7 +133,7 @@ h1 {
 .card-title {
     text-align: center;
     margin: 10px;
-    font-size: 5em;
+    font-size: 4em;
 }
 
 .card-text {
@@ -364,6 +364,11 @@ form {
     animation-delay: 0.5s;
 }
 
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
 @-webkit-keyframes fadeIn {
     from {
         opacity: 0;
@@ -372,8 +377,9 @@ form {
     to {
         opacity: 1;
     }
-    }
-    @keyframes fadeIn {
+}
+
+@keyframes fadeIn {
     from {
         opacity: 0;
     }
@@ -381,8 +387,5 @@ form {
     to {
         opacity: 1;
     }
-    }
-    .fadeIn {
-        -webkit-animation-name: fadeIn;
-        animation-name: fadeIn;
-    }
+}
+    
