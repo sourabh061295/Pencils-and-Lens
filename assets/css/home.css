@@ -45,10 +45,6 @@ footer {
     width: 100%;
 } */
 
-#logo {
-    text-align: center;
-}
-
 #instadiv:hover {
     letter-spacing: 1px;;
     border-radius: 10px;
@@ -60,15 +56,19 @@ footer {
                 4px 4px 10px rgba(255, 255, 255, 0.6),  -4px -4px 10px rgba(255, 255, 255, 0.6), 4px -4px 10px rgba(255, 255, 255, 0.6),  -4px 4px 10px rgba(255, 255, 255, 0.6);
 }
 
-#copyright {
-    text-align: right;
+.copyright {
+    text-align: center;
     margin-top: 15px;
     color: rgba(233,236,239,0.5);
     transition: all 0.4s;
 }
 
-#copyright:hover {
+.copyright:hover {
     color: #e9ecef;
+}
+
+.copyright:last-child {
+    text-align: right;
 }
 
 .card-text {
@@ -309,6 +309,31 @@ nav {
     transition: all 0.4s;
     text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.2);
 }
+
+.details {
+    color: rgba(255, 255, 255, 0.726);
+    text-align: center;
+    font-size: 1.5em;
+    margin: 100px 0;
+}
+
+.details > ul {
+    list-style: none;
+    line-height: 2.5em;
+    font-size: 0.8em;
+}
+
+form {
+    font-size: 1.5em;
+    color: white;
+}
+
+#textareainput:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="file"]:focus {
+    border-color: rgba(126, 239, 104, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+    outline: 0 none;
+}
+
 
 @keyframes glowing {
     0% { background-position: 0 0; }
