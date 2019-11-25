@@ -45,15 +45,16 @@ footer {
     width: 100%;
 } */
 
-#instadiv:hover {
-    letter-spacing: 1px;;
-    border-radius: 10px;
-    border: 1px solid rgba(255,255,255,0.4);
-    background: #e9ecef;
-    color: #000;
+.social_links {
+    transition: all 0.8s ease-in-out;
+    border-radius: 50%;
+}
+
+.social_links:hover {
     cursor: pointer;
     box-shadow: 2px 2px 10px #fff, -2px -2px 10px #fff, 2px -2px 10px #fff, -2px 2px 10px #fff,
                 4px 4px 10px rgba(255, 255, 255, 0.6),  -4px -4px 10px rgba(255, 255, 255, 0.6), 4px -4px 10px rgba(255, 255, 255, 0.6),  -4px 4px 10px rgba(255, 255, 255, 0.6);
+    transform: rotate(360deg);
 }
 
 .copyright {
@@ -101,6 +102,20 @@ h1 {
     background-image: url("../../data/images/portrait.png");
 }
 
+#colorgame {
+    background-image: url("../../data/images/color_game.jpg");
+}
+
+#melody {
+    background-image: url("../../data/images/color_rings.jpg");
+    background-position: center;
+}
+
+#coming {
+    background-image: url("../../data/images/coming_soon.jpg");
+    background-position: center;
+}
+
 .card-img-overlay {
     padding: 0;
     background-size: cover;
@@ -116,7 +131,7 @@ h1 {
 
 .card-img-overlay:hover {
     transform: scale(1.05);
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.5);
     background-blend-mode: lighten;
     color: #000;
     border-radius: 20px;
@@ -130,10 +145,15 @@ h1 {
     display: block;
 }
 
+.card-img-overlay:hover .card-title {
+    text-shadow: none;
+}
+
 .card-title {
     text-align: center;
     margin: 10px;
     font-size: 4em;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2), 1px -1px 0 rgba(0, 0, 0, 0.2), -1px 1px 0 rgba(0, 0, 0, 0.2), 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card-text {
@@ -174,6 +194,16 @@ h1 {
 
 .navbar {
     background: #000;
+}
+
+.rainbow_background {
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+
+    -webkit-animation: rainbow 18s ease infinite;
+    -z-animation: rainbow 18s ease infinite;
+    -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;}
 }
 
 .navbar-toggler-icon {
@@ -289,7 +319,7 @@ nav {
 
 #imagedisplay {
     background-image: url("../../data/images/order_image.jpg");
-    height: 45em;
+    height: 49em;
     display: block;
     background-repeat: no-repeat;
     background-position: center;
@@ -324,11 +354,11 @@ nav {
 }
 
 form {
-    font-size: 1.5em;
+    font-size: 1.1em;
     color: white;
 }
 
-#textareainput:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="file"]:focus {
+#textareainput:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="file"]:focus, input[type="date"]:focus, input[type="tel"]:focus {
     border-color: rgba(126, 239, 104, 0.8);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
     outline: 0 none;
@@ -387,5 +417,26 @@ form {
     to {
         opacity: 1;
     }
+}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
 }
     
