@@ -1,5 +1,5 @@
 
-var img_list = ["../data/images/order_image.jpg","../data/images/sketch.png","../data/images/photo.png","../data/images/portrait.png","../data/images/sample.jpg"];
+var img_list = ["../data/images/sketch.png","../data/images/photo.png","../data/images/portrait.png","../data/images/sample.jpg"];
 var idx = 0;
 
 function changeimg() {
