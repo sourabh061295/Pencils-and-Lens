@@ -23,10 +23,11 @@ footer {
 .jumbotron {
     padding-top: 80px;
     height: 35em;
-    background: url("../../data/images/kelli-tungay-2LJ4rqK2qfU-unsplash.jpg") center no-repeat;
+    background: url("../../data/images/home.png") center no-repeat;
     background-size: cover;
     background-color: rgba(255,255,255,0.5);
     background-blend-mode: lighten;
+    /* background-position: bottom; */
     text-align: center;
     box-shadow: 0px 8px 10px #98999b;
     /* For overlay on jumbotron */
@@ -96,6 +97,7 @@ h1 {
 
 #photocard {
     background-image: url("../../data/images/photo.png");
+    background-position: center;
 }
 
 #giftcard {
@@ -199,6 +201,8 @@ h1 {
 .rainbow_background {
     background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
     background-size: 1500% 1500%;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: darken;
 
     -webkit-animation: rainbow 10s ease infinite;
     -z-animation: rainbow 10s ease infinite;
@@ -206,9 +210,10 @@ h1 {
     animation: rainbow 10s ease infinite;}
 }
 
-.navbar-toggler-icon {
+.navbar-dark .navbar-toggler-icon {
     background-image: url("../../data/images/pencil_menu.png");
 }
+
 
 #activepage {
     background: #e9ecef;
@@ -318,7 +323,7 @@ nav {
 }
 
 #imagedisplay {
-    background-image: url("../../data/images/order_image.jpg");
+    background-image: url("../../data/images/sketch.png");
     height: 49em;
     display: block;
     background-repeat: no-repeat;

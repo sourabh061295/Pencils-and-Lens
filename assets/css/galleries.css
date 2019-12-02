@@ -14,11 +14,10 @@ div.col-8.col-md-4 {
 } 
 
 .myImg {
-    border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s;
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    height: 250px;
     object-fit: cover;
     overflow: hidden;
 }
