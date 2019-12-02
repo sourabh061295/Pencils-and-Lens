@@ -93,6 +93,7 @@ h1 {
 
 #sketchcard {
     background-image: url("../../data/images/sketch.png");
+    background-position: right;
 }
 
 #photocard {
@@ -110,7 +111,6 @@ h1 {
 
 #melody {
     background-image: url("../../data/images/color_rings.jpg");
-    background-position: center;
 }
 
 #coming {
@@ -210,7 +210,7 @@ h1 {
     animation: rainbow 10s ease infinite;}
 }
 
-.navbar-dark .navbar-toggler-icon {
+.navbar-toggler-icon {
     background-image: url("../../data/images/pencil_menu.png");
 }
 
@@ -356,6 +356,7 @@ nav {
     list-style: none;
     line-height: 2.5em;
     font-size: 0.8em;
+    padding: 0;
 }
 
 form {
