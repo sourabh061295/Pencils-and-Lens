@@ -3,11 +3,12 @@
 <head>
 	<title>Color Game</title>
 	<link rel = "icon" href = "../data/images/colorgame.png" type = "image/x-icon"> 
-	<link rel="stylesheet" type="text/css" href="../assets/css/colorGame.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/home.css">
+
 	<link href="https://fonts.googleapis.com/css?family=Expletus+Sans|Philosopher:400,700|Satisfy&display=swap" rel="stylesheet">
 </head>
-<body class="animate fadeIn delay">
-	<h1>
+<body id="guessColor"class="animate fadeIn delay">
+	<h1 id="gameTitle">
 		The Great 
 		<br>
 		<span id="colorDisplay">RGB</span> 
@@ -16,10 +17,10 @@
 	</h1>
 
 	<div id="stripe">
-		<button id="reset">New Colors</button>
+		<button id="reset" class="gameButton">New Colors</button>
 		<span id="message"></span>
-		<button class="mode">Easy</button>
-		<button class="mode selected">Hard</button>
+		<button class="mode gameButton">Easy</button>
+		<button class="mode selected gameButton">Hard</button>
 	</div>
 
 		<div id="container">

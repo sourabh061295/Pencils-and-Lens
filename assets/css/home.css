@@ -1,3 +1,5 @@
+/*******************************************************************************************************************************************************/
+/*Common for all */
 html {
     width: 100%;
     height: 100%;
@@ -10,383 +12,7 @@ body {
     background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-a {
-    color: #e9ecef;
-    text-decoration: none;
-    transition: all 0.4s;
-}
-
-footer {
-    margin-top: 20px;
-}
-
-.jumbotron {
-    padding-top: 80px;
-    height: 35em;
-    background: url("../../data/images/home.png") center no-repeat;
-    background-size: cover;
-    background-color: rgba(255,255,255,0.5);
-    background-blend-mode: lighten;
-    /* background-position: bottom; */
-    text-align: center;
-    box-shadow: 0px 8px 10px #98999b;
-    /* For overlay on jumbotron */
-    /* position: fixed;
-    z-index: 1;
-    width: 100%;
-    top: 0; */
-}
-
-/* For overlay on jumbotron */
-/* .contents {
-    background: rgba(0, 0, 0, 0.6);
-    position: relative;
-    z-index: 1;
-    margin-top: 600px;
-    width: 100%;
-} */
-
-.social_links {
-    transition: all 0.8s ease-in-out;
-    border-radius: 50%;
-}
-
-.social_links:hover {
-    cursor: pointer;
-    box-shadow: 2px 2px 10px #fff, -2px -2px 10px #fff, 2px -2px 10px #fff, -2px 2px 10px #fff,
-                4px 4px 10px rgba(255, 255, 255, 0.6),  -4px -4px 10px rgba(255, 255, 255, 0.6), 4px -4px 10px rgba(255, 255, 255, 0.6),  -4px 4px 10px rgba(255, 255, 255, 0.6);
-    transform: rotate(360deg);
-}
-
-.copyright {
-    text-align: center;
-    margin-top: 15px;
-    color: rgba(233,236,239,0.5);
-    transition: all 0.4s;
-}
-
-.copyright:hover {
-    color: #e9ecef;
-}
-
-.copyright:last-child {
-    text-align: right;
-}
-
-.card-text {
-    text-align: center;
-    padding: 0 10px;
-    font-weight: 700;
-}
-
-.card-text a{
-    color: #e9ecef;
-    text-decoration: none;
-}
-
-h1 {
-    margin-top: 0.8em;
-    font-size: 9em;
-    font-family: Satisfy;
-    letter-spacing: 1px;
-}
-
-#sketchcard {
-    background-image: url("../../data/images/sketch.png");
-    background-position: right;
-}
-
-#photocard {
-    background-image: url("../../data/images/photo.png");
-    background-position: center;
-}
-
-#giftcard {
-    background-image: url("../../data/images/portrait.png");
-}
-
-#colorgame {
-    background-image: url("../../data/images/color_game.jpg");
-}
-
-#melody {
-    background-image: url("../../data/images/color_rings.jpg");
-}
-
-#coming {
-    background-image: url("../../data/images/coming_soon.jpg");
-    background-position: center;
-}
-
-.card-img-overlay {
-    padding: 0;
-    background-size: cover;
-    transition: all 0.4s;
-}
-
-.card {
-    height: 35em;
-    width: 95%;
-    margin: 10px;
-    background: inherit;   
-}
-
-.card-img-overlay:hover {
-    transform: scale(1.05);
-    background-color: rgba(255,255,255,0.5);
-    background-blend-mode: lighten;
-    color: #000;
-    border-radius: 20px;
-    box-shadow: 5px 5px 20px rgba(3, 252, 248, 0.6), -5px -5px 20px rgba(3, 252, 248, 0.6),
-                5px -5px 20px rgba(3, 252, 248, 0.6), -5px 5px 20px rgba(3, 252, 248, 0.6),
-                10px 10px 20px rgba(3, 252, 248, 0.3), -10px -10px 20px rgba(3, 252, 248, 0.3),
-                10px -10px 20px rgba(3, 252, 248, 0.3), -10px 10px 20px rgba(3, 252, 248, 0.3);
-}
-
-.card-img-overlay:hover .card-text {
-    display: block;
-}
-
-.card-img-overlay:hover .card-title {
-    text-shadow: none;
-}
-
-.card-title {
-    text-align: center;
-    margin: 10px;
-    font-size: 4em;
-    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2), 1px -1px 0 rgba(0, 0, 0, 0.2), -1px 1px 0 rgba(0, 0, 0, 0.2), 1px 1px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card-text {
-    color: rgba(0, 0, 0, 0.6);
-    display: none;
-    margin: 100px 20px;
-    padding: 0 20px;
-    font-size: 1.2em;
-    transition: all 0.4s;
-}
-
-.navbar-nav .nav-link {
-    font-size: 1em;
-    text-align: center;
-    font-weight: 700;
-    padding: 5px;
-    width: 13em;
-    height: 50px;
-    line-height: 35px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #FFF;
-    transition: all 0.4s;
-}
-
-.navbar-brand {
-    padding: 0;
-    width: 5em;
-    text-align: center;
-    transition: all 1s ease-in-out;
-}
-
-.lead {
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-    font-family: Expletus Sans;
-    font-size: 1.2em;
-}
-
-.navbar {
-    background: #000;
-}
-
-.rainbow_background {
-    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-    background-size: 1500% 1500%;
-    background-color: rgba(0, 0, 0, 0.2);
-    background-blend-mode: darken;
-
-    -webkit-animation: rainbow 10s ease infinite;
-    -z-animation: rainbow 10s ease infinite;
-    -o-animation: rainbow 10s ease infinite;
-    animation: rainbow 10s ease infinite;}
-}
-
-.navbar-toggler-icon {
-    background-image: url("../../data/images/pencil_menu.png");
-}
-
-
-#activepage {
-    background: #e9ecef;
-    color: #000;
-}
-
-.links {
-    position: absolute;                  
-    bottom: 30px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    font-size: 1.2em;
-}
-
-#jumboName {
-    transition: all 0.4s;
-    text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3), 4px 8px 4px rgba(0, 0, 0, 0.1), 6px 12px 6px rgba(0, 0, 0, 0.1);
-}
-
-#jumboName:hover {
-    transform: scale(1.1);
-}
-
-a.nav-link.galleries:hover {
-    letter-spacing: 2px;
-    background: #e9ecef;
-    color: rgba(0, 0, 0, 0.8);;
-    transition: all 0.4s;
-}
-
-a.navbar-brand:hover {
-    transform: rotateY(360deg);
-}
-
-hr {
-    width: 100%;
-    height: 12px;
-    border: 0;
-    box-shadow: inset 0 10px 10px -14px rgba(0, 0, 0, 0.8);
-}
-
-.tabs > hr {
-    width: 80%;
-    box-shadow: inset 0 10px 10px -14px rgba(255, 255, 255, 0.8);
-}
-
-button:focus {
-    outline: 0;
-}
-
-.glow-on-hover {
-    margin-right: 20px;
-    text-transform: uppercase;
-    font-weight: 700;
-    background: inherit;
-    color: #FFF;
-    width: 13em;
-    height: 50px;
-    padding: 5px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 5px;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    transition: all 0.4s;
-}
-
-.glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(   5px);
-    width: calc(100% + 2px);
-    height: calc(100% + 2px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    border-radius: 5px;
-}
-
-.glow-on-hover:active {
-    color: #000;
-}
-
-.glow-on-hover:hover {
-    letter-spacing: 2px;
-}
-
-.glow-on-hover:hover:before {
-    opacity: 1;
-}
-
-.navbar.scrolled {
-    background: rgba(0, 0, 0, 0.4);
-    opacity: 0.9;
-}
-
-nav {
-    transition: all 0.4s;
-}
-
-#imagedisplay {
-    background-image: url("../../data/images/sketch.png");
-    height: 49em;
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 15px ;
-    box-shadow: 5px 5px 10px #f0f0f0;
-}
-
-.tabs {
-    height: 2.5em;
-    font-family: Satisfy;
-    text-align: center;
-    font-size: 4em;
-    background: -webkit-linear-gradient(rgb(167, 167, 167), #eee);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.4s;
-    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.2);
-}
-
-.details {
-    color: rgba(255, 255, 255, 0.726);
-    text-align: center;
-    font-size: 1.5em;
-    margin: 100px 0;
-}
-
-.details > ul {
-    list-style: none;
-    line-height: 2.5em;
-    font-size: 0.8em;
-    padding: 0;
-}
-
-form {
-    font-size: 1.1em;
-    color: white;
-}
-
-#textareainput:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="file"]:focus, input[type="date"]:focus, input[type="tel"]:focus {
-    border-color: rgba(126, 239, 104, 0.8);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
-    outline: 0 none;
-}
-
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-}
-
-@media screen and (max-width: 1530px) {
-    h1 {
-      font-size: 7em;
-    }
-
-    .card-title {
-        font-size: 4em;
-    }
-}
-
+/* Classes for fading effect for different pages */
 .animate {
     -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s;
@@ -405,6 +31,606 @@ form {
     animation-name: fadeIn;
 }
 
+/* Modify all anchor tags */
+a {
+    color: #e9ecef;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+/* Remove outline for buttons */
+button:focus {
+    outline: 0;
+}
+
+/*******************************************************************************************************************************************************/
+/* Navbar */
+.navbar {
+    background: #000;
+}
+
+/* Fade after scroll */
+nav {
+    transition: all 0.4s;
+}
+
+.navbar.scrolled {
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0.9;
+}
+
+/* Logo */
+.navbar-brand {
+    width: 5em;
+    padding: 0;
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+
+/* Logo hover effect */
+a.navbar-brand:hover {
+    transform: rotateY(360deg);
+}
+
+/* All buttons on the navbar */
+.navbar-nav .nav-link {
+    width: 13em;
+    height: 50px;
+    padding: 5px;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFF;
+    transition: all 0.4s;
+}
+
+/* Button hover effects */
+a.nav-link.galleries:hover {
+    letter-spacing: 2px;
+    color: rgba(0, 0, 0, 0.8);
+    background: #e9ecef;
+    transition: all 0.4s;
+}
+
+/* Active page indicator */
+#activepage {
+    color: #000;
+    background: #e9ecef;   
+}
+
+/* Rainbow button */
+.glow-on-hover {
+    width: 13em;
+    height: 50px;
+    padding: 5px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: #FFF;
+    background: inherit;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    transition: all 0.4s;
+}
+
+.glow-on-hover:before {
+    content: '';
+    top: -2px;
+    left:-2px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    border-radius: 5px;
+    position: absolute;
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background-size: 400%;
+    filter: blur(   5px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.4s ease-in-out;
+    
+}
+
+.glow-on-hover:active {
+    color: #000;
+}
+
+.glow-on-hover:hover {
+    letter-spacing: 2px;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+/* Rainbow navbar */
+.rainbow_background {
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1500% 1500%;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: darken;
+
+    -webkit-animation: rainbow 10s ease infinite;
+    -z-animation: rainbow 10s ease infinite;
+    -o-animation: rainbow 10s ease infinite;
+    animation: rainbow 10s ease infinite;
+}
+
+/*******************************************************************************************************************************************************/
+/* Jumbotron */
+.jumbotron {
+    padding-top: 80px;
+    height: 35em;
+    text-align: center;
+    box-shadow: 0px 8px 10px #98999b;
+    background: url("../../data/images/home.png") center no-repeat;
+    background-size: cover;
+    background-color: rgba(255,255,255,0.5);
+    background-blend-mode: lighten;
+}
+
+/* Page heading */
+h1 {
+    margin-top: 0.8em;
+    font-size: 9em;
+    font-family: Satisfy;
+    letter-spacing: 1px;
+    text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3), 4px 8px 4px rgba(0, 0, 0, 0.1), 6px 12px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+}
+
+/* Zoom effect for the page heading */
+h1:hover {
+    transform: scale(1.1);
+}
+
+/* Sub heading styling */
+.lead {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    font-family: Expletus Sans;
+    font-size: 1.2em;
+}
+
+/* Horizontal rule styling */
+hr {
+    width: 100%;
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 10px 10px -14px rgba(0, 0, 0, 0.8);
+}
+
+/*******************************************************************************************************************************************************/
+/* Page contents */
+/* HOME PAGE ========================================================== */
+/* Image cards */
+.card {
+    height: 35em;
+    width: 95%;
+    margin: 10px;
+    background: inherit;   
+}
+
+/* Card title styling */
+.card-title {
+    margin: 10px;
+    font-size: 4em;
+    text-align: center;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.2), 1px -1px 0 rgba(0, 0, 0, 0.2), -1px 1px 0 rgba(0, 0, 0, 0.2), 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Shadow off on hover */
+.card-img-overlay:hover .card-title {
+    text-shadow: none;
+}
+
+/* Card sub line styling */
+.card-text {
+    margin: 100px 20px;
+    padding: 0 20px;
+    display: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    transition: all 0.4s;
+}
+
+/* Reveal on hover */
+.card-img-overlay:hover .card-text {
+    display: block;
+}
+
+/* Card image styling */
+.card-img-overlay {
+    background-size: cover;
+    transition: all 0.4s;
+}
+
+/* Zoom effect for cards */
+.card-img-overlay:hover {
+    color: #000;
+    transform: scale(1.05);
+    background-color: rgba(255,255,255,0.5);
+    background-blend-mode: lighten;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgba(3, 252, 248, 0.6), -5px -5px 20px rgba(3, 252, 248, 0.6),
+                5px -5px 20px rgba(3, 252, 248, 0.6), -5px 5px 20px rgba(3, 252, 248, 0.6),
+                10px 10px 20px rgba(3, 252, 248, 0.3), -10px -10px 20px rgba(3, 252, 248, 0.3),
+                10px -10px 20px rgba(3, 252, 248, 0.3), -10px 10px 20px rgba(3, 252, 248, 0.3);
+}
+
+/* Assigning images to each card */
+#sketchcard {
+    background-image: url("../../data/images/sketch.png");
+    background-position: right;
+}
+
+#photocard {
+    background-image: url("../../data/images/photo.png");
+    background-position: center;
+}
+
+#giftcard {
+    background-image: url("../../data/images/portrait.png");
+}
+
+/* GALLERY PAGES ===================================================== */
+/* Thumbnail titles */
+.tile-title {
+    color: #e9ecef;
+    text-align: center;
+}
+
+/* Content margin addition */
+div.col-8.col-md-4 {
+    margin: 20px 0;
+}
+
+/* Image thumbnail styling */
+.img-thumbnail {
+    padding: 0;
+    border: none;
+    transition: all 0.4s;
+} 
+
+/* Individual image */
+.myImg {
+    width: 100%;
+    height: 250px;
+    cursor: pointer;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+/* Hover effect for all images */
+.myImg:hover {
+    opacity: 0.7;
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px rgba(0, 255, 0, 0.6), -5px -5px 10px rgba(0, 255, 0, 0.6),
+                5px -5px 10px rgba(0, 255, 0, 0.6), -5px 5px 10px rgba(0, 255, 0, 0.6),
+                10px 10px 10px rgba(0, 255, 0, 0.3), -10px -10px 10px rgba(0, 255, 0, 0.3),
+                10px -10px 10px rgba(0, 255, 0, 0.3), -10px 10px 10px rgba(0, 255, 0, 0.3);
+}
+  
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    width: 80%;
+    max-width: 700px;
+    height: 150px;
+    margin: auto;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    color: #ccc;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 80px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+/* Close button hover effect */
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ORDER PAGE ======================================================== */
+/* Section titles */
+.tabs {
+    height: 2.5em;
+    font-family: Satisfy;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.2);
+    font-size: 4em;
+    background: -webkit-linear-gradient(rgb(167, 167, 167), #eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.4s;
+}
+
+/* Section underlines */
+.tabs > hr {
+    width: 80%;
+    box-shadow: inset 0 10px 10px -14px rgba(255, 255, 255, 0.8);
+}
+
+/* Image slideshow */
+#imagedisplay {
+    height: 49em;
+    display: block;
+    background-image: url("../../data/images/sketch.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px ;
+    box-shadow: 5px 5px 10px #f0f0f0;
+}
+
+/* Details section */
+.details {
+    margin: 100px 0;
+    color: rgba(255, 255, 255, 0.726);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.details > ul {
+    padding: 0;
+    list-style: none;
+    line-height: 2.5em;
+    font-size: 0.8em;
+}
+
+/* Modify form components */
+form {
+    font-size: 1.1em;
+    color: white;
+}
+
+/* Form focus styling */
+#textareainput:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="file"]:focus, input[type="date"]:focus, input[type="tel"]:focus {
+    border-color: rgba(126, 239, 104, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+    outline: 0 none;
+}
+
+/* GAME PAGE ========================================================= */
+#colorgame {
+    background-image: url("../../data/images/color_game.jpg");
+}
+
+#melody {
+    background-image: url("../../data/images/color_rings.jpg");
+}
+
+#coming {
+    background-image: url("../../data/images/coming_soon.jpg");
+    background-position: center;
+}
+
+/* COLOR GUESSING GAME =============================================== */
+/* Body of the game html */
+#guessColor {
+	margin: 0;
+	background-color: #232323;
+	font-family: Philosopher;
+}
+
+/* Each square in the grid */
+.square {
+	width: 30%;
+	margin: 1.66%;
+	border-radius: 15%;
+	padding-bottom: 30%;
+	background: purple;
+	float: left;
+	transition: background 0.6s;
+	-webkit-transition: background 0.6s;
+	-moz-transition: background 0.6s;
+}
+
+/* Container of the grid */
+#container {
+	margin: 20px auto;
+	max-width: 600px;
+}
+
+/* Title banner */
+#gameTitle {
+	text-align: center;
+	line-height: 1.1;
+    font-weight: normal;
+    font-size: 4em;
+	color: white;
+	background: steelblue;
+	margin: 0;
+	text-transform: uppercase;
+    padding: 20px 0;
+    font-family: Philosopher;
+    transform: none;
+}
+
+/* Span displaying the color to be guessed */
+#colorDisplay {
+	font-size: 150%;
+}
+
+/* Disclaimer */
+#message {
+	display: inline-block;
+	width: 20%;
+}
+
+/* Strip below the title banner */
+#stripe {
+	background: white;
+	height: 30px;
+	text-align: center;
+	color: black;
+}
+
+/* Mode selection highlighter */
+.selected {
+	color: white;
+	background: steelblue;
+}
+
+/* Button styling */
+.gameButton {
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	outline: none;
+}
+
+/* Hovering effect on the buttons */
+.gameButton:hover {
+	color: white;
+	background: steelblue;
+}
+
+/* COLOURED CIRCLES ========================================================= */
+/* Game page html */
+#gamePage {
+	width: 100%;
+	height: 100%;
+	/* To fix the position, doesn't scroll */
+	clip: auto;
+	position: absolute;
+	overflow: hidden;
+	background: black;
+}
+
+/* Body of the html */
+#canvasBody {
+	height: 100%;
+	margin: 0;
+	background: black;
+}
+
+/* Canvas for animation */
+#myCanvas {
+	width: 100%;
+	height: 80%;
+	background: black;
+}
+
+/* Disclaimer */
+h4 {
+	font-family: Graduate;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.74);
+}
+
+/*******************************************************************************************************************************************************/
+/* Footer */
+footer {
+    margin-top: 20px;
+}
+
+.social_links {
+    border-radius: 50%;
+    transition: all 0.8s ease-in-out;
+}
+
+.social_links:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #fff, -2px -2px 10px #fff, 2px -2px 10px #fff, -2px 2px 10px #fff,
+                4px 4px 10px rgba(255, 255, 255, 0.6),  -4px -4px 10px rgba(255, 255, 255, 0.6), 4px -4px 10px rgba(255, 255, 255, 0.6),  -4px 4px 10px rgba(255, 255, 255, 0.6);
+    transform: rotate(360deg);
+}
+
+.copyright {
+    margin-top: 15px;
+    text-align: center;
+    color: rgba(233,236,239,0.5);
+    transition: all 0.4s;
+}
+
+.copyright:hover {
+    color: #e9ecef;
+}
+
+.copyright:last-child {
+    text-align: right;
+}
+
+/*******************************************************************************************************************************************************/
+/* Media queries */
+/* Navbar button */
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* Home page */
+@media screen and (max-width: 1530px) {
+    h1 {
+        font-size: 7em;
+    }
+
+    .card-title {
+        font-size: 4em;
+    }
+}
+
+/* Fade effect for pages */
 @-webkit-keyframes fadeIn {
     from {
         opacity: 0;
@@ -425,6 +651,7 @@ form {
     }
 }
 
+/* Rainbow navbar */
 @-webkit-keyframes rainbow {
     0%{background-position:0% 82%}
     50%{background-position:100% 19%}
@@ -445,4 +672,16 @@ form {
     50%{background-position:100% 19%}
     100%{background-position:0% 82%}
 }
-    
+
+/* Modal image display */
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
