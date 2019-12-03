@@ -43,6 +43,22 @@ button:focus {
     outline: 0;
 }
 
+/* Scrollbar styling */
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+   
+body::-webkit-scrollbar-track {
+    background: inherit;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 0.5em;
+    background: #2C3E50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 /*******************************************************************************************************************************************************/
 /* Navbar */
 .navbar {
@@ -94,6 +110,12 @@ a.nav-link.galleries:hover {
     background: #e9ecef;
     transition: all 0.4s;
 }
+
+/* Navbar toggler icon image */
+.navbar-toggler-icon {
+    background-image: url("../../data/images/pencil_menu.png");
+    transform: rotate(90deg);
+} 
 
 /* Active page indicator */
 #activepage {
@@ -283,12 +305,6 @@ hr {
 }
 
 /* GALLERY PAGES ===================================================== */
-/* Thumbnail titles */
-.tile-title {
-    color: #e9ecef;
-    text-align: center;
-}
-
 /* Content margin addition */
 div.col-8.col-md-4 {
     margin: 20px 0;
@@ -336,24 +352,17 @@ div.col-8.col-md-4 {
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
+/* Disable scrollbar */
+.modal::-webkit-scrollbar {
+    width: 0.2em;
+}
+
 /* Modal Content (Image) */
 .modal-content {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
-}
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-    width: 80%;
-    max-width: 700px;
-    height: 150px;
-    margin: auto;
-    padding: 10px 0;
-    display: block;
-    text-align: center;
-    color: #ccc;
 }
 
 /* Add Animation - Zoom in the Modal */

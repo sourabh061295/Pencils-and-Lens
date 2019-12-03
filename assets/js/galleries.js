@@ -1,16 +1,25 @@
 // Get the modal
 var modal = document.getElementById('myModal');
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
+// Get the image and insert it inside the modal
 var img = $('.myImg');
 var modalImg = $("#img01");
-var captionText = document.getElementById("caption");
-$('.myImg').click(function(){
+
+$(document).ready(function(){
+  for (var i=0;i<5;i++)
+  {
+    $(".images").append("<div class='col-8 col-md-4 col-lg-3'><img class='myImg img-thumbnail' src='../data/images/photo.png'></div>");
+  }
+  
+  $('.myImg').on("click", function(){
+    console.log("sdvsd");
     modal.style.display = "block";
     var newSrc = this.src;
     modalImg.attr('src', newSrc);
-    captionText.innerHTML = newSrc.substring(newSrc.lastIndexOf("/") + 1, newSrc.lastIndexOf("."));
+  });
 });
+
+
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
