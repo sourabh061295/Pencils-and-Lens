@@ -81,11 +81,12 @@ nav {
     padding: 0;
     text-align: center;
     transition: all 1s ease-in-out;
+    animation: rotation 2s infinite linear;
 }
 
 /* Logo hover effect */
 a.navbar-brand:hover {
-    transform: rotateY(360deg);
+    /* transform: rotateY(360deg); */
 }
 
 /* All buttons on the navbar */
@@ -694,3 +695,13 @@ footer {
         width: 100%;
     }
 }
+
+/* Logo Rotation */
+@keyframes rotation {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(359deg);
+    }
+  }
