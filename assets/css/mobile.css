@@ -1,0 +1,81 @@
+@media screen and (max-width: 550px) {
+    .jumbotron {
+        height: 20em;
+    }
+
+    .card {
+        height: 20em;
+    }
+    
+    h1 {
+        font-size: 5em;
+    }
+
+    h1:hover {
+        transform: none;
+    }
+
+    h1 img {
+        display: none;
+    }
+
+    .card-title {
+        font-size: 3em;
+    }
+
+    .card-text, .card-img-overlay:hover .card-text {
+        display: none;
+    }
+
+    .social_links:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    .social_links img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .copyright:last-child {
+        text-align: center;
+    }
+
+    .myImg {
+        box-shadow: none;
+        transform: none;
+    }
+
+    .modal {
+        padding: 150px 0;
+    }
+
+    .modal-content {
+        width: 70%;
+        max-width: 450px;
+    }
+
+    #imagedisplay {
+        height: 30em;
+    }
+
+    .tabs {
+        font-size: 3em;
+    }
+
+    form {
+        font-size: 1em;
+    }
+
+    .glow-on-hover {
+        display: none;
+    }
+
+    .details {
+        margin: 50px 0;
+    }
+
+    .details > ul {
+        font-size: 0.7em;
+    }
+}

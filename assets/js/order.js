@@ -20,4 +20,4 @@ function changeimg() {
     idx = ((idx+1) % img_list.length);
 }
 
-setInterval(changeimg, 2500);
+setInterval(changeimg, 3000);

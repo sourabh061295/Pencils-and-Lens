@@ -13,7 +13,7 @@ switch (document.querySelector("#jumboName > h1").textContent) {
                           break;
   case " Image Gallery":  document.querySelector(".jumbotron").style.backgroundImage = "url(../data/images/photo_wall.jpg)";
                           break;
-  case " Order A Sketch": document.querySelector(".jumbotron").style.backgroundImage = "url(../data/images/sketch_order.jpg)";
+  case " Orders": document.querySelector(".jumbotron").style.backgroundImage = "url(../data/images/sketch_order.jpg)";
                           break;
   case " World of Colors!": document.querySelector(".jumbotron").style.backgroundImage = "url(../data/images/olav-ahrens-rotne-4Ennrbj1svk-unsplash.jpg)";
                             document.querySelector(".navbar").classList.add("rainbow_background");
