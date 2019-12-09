@@ -120,7 +120,7 @@ a.nav-link.galleries:hover {
 } 
 
 /* Active page indicator */
-#activepage {
+#activePage {
     color: #000;
     background: #e9ecef;   
 }
@@ -292,17 +292,17 @@ hr {
 }
 
 /* Assigning images to each card */
-#sketchcard {
+#sketchCard {
     background-image: url("../../data/images/sketch.png");
     background-position: right;
 }
 
-#photocard {
+#photoCard {
     background-image: url("../../data/images/photo.png");
     background-position: center;
 }
 
-#giftcard {
+#giftCard {
     background-image: url("../../data/images/portrait.png");
 }
 
@@ -413,7 +413,7 @@ div.col-8.col-md-4 {
 }
 
 /* Image slideshow */
-#imagedisplay {
+#imageDisplay {
     height: 49em;
     display: block;
     background-image: url("https://i.pinimg.com/originals/ec/4e/80/ec4e8080b790e8f5ea6c9738e943de38.jpg");
@@ -446,14 +446,14 @@ form {
 }
 
 /* Form focus styling */
-#textareainput:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="file"]:focus, input[type="date"]:focus, input[type="tel"]:focus {
+#textAreaInput:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="file"]:focus, input[type="date"]:focus, input[type="tel"]:focus {
     border-color: rgba(126, 239, 104, 0.8);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
     outline: 0 none;
 }
 
-/* GAME PAGE ========================================================= */
-#colorgame {
+/* BONUS PAGE ========================================================= */
+#colorGame {
     background-image: url("../../data/images/color_game.jpg");
 }
 

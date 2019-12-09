@@ -8,19 +8,22 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
-    <!-- Local CSS stylesheets -->
+    <!-- Stylesheet for PC devices -->
     <link rel="stylesheet" href="../assets/css/home.css">
 
-    <!-- Load mobile phone stylesheet -->
+    <!-- Stylesheet for mobile devices -->
     <link rel="stylesheet" href="../assets/css/mobile.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Expletus+Sans|Philosopher:400,700|Satisfy&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     
-    <title>Art Collection</title>
+    <title>World of Colors</title>
 
     <!-- Adding icon to the title -->
-    <link rel = "icon" href = "../data/images/art.png" type = "image/x-icon"> 
+    <link rel = "icon" href = "../data/images/rainbow_icon.jpg" type = "image/x-icon"> 
   </head>
   <body class="animate fadeIn delay">
 
@@ -28,7 +31,7 @@
     <nav class="navbar navbar-expand-lg fixed-top p-0">
         <div class="container-fluid p-0">
             <!-- Navbar logo -->
-            <a class="navbar-brand m-0" href="../pages/home.html"><img src="../data/images/P&L(white).png" width = "50" height = "50"></a>
+            <a class="navbar-brand m-0" href="../pages/home.html"><img id="logo" src="../data/images/P&L(white).png" width = "50" height = "50"></a>
             <!-- Navbar toggle button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -36,19 +39,14 @@
             <!-- Navbar buttons -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto d-flex justify-content-between">
-                    <a class="nav-link galleries" id="activepage" href="#">
+                    <a class="nav-link galleries" href="../pages/artGallery.html">
                         <li class="nav-item">Art Collection</li>
                     </a>
-                    <a class="nav-link galleries" href="../pages/photo.html">
+                    <a class="nav-link galleries" href="../pages/photoGallery.html">
                         <li class="nav-item">Image Gallery</li>
                     </a>
-                    <a class="nav-link galleries" href="../pages/order.html">
+                    <a class="nav-link galleries" href="../pages/orders.html">
                         <li class="nav-item">Orders</li>
-                    </a>
-                </ul>
-                <ul class="nav navbar-nav ml-auto">
-                    <a href="../pages/games.html">
-                        <li class="nav-item"><button class="glow-on-hover" type="button">World of Colors!</button></li>
                     </a>
                 </ul>
             </div>
@@ -58,22 +56,38 @@
     <!-- Jumbotron -->
     <div class="jumbotron">
         <div id="jumboName">
-            <h1><img src="../data/images/art_jumbo.png" alt="" width="200px" height="200px"> Art Collection</h1></div>
+            <h1><img src="../data/images/rainbow.png" alt="" width="150px" height="150px"> World of Colors!</h1></div>
             <hr>
-            <p class="lead d-none d-md-inline-block">A world of pencil shades and colors.</p>
+            <p class="lead d-none d-md-inline-block">Enjoy with the colors.</p>
     </div>
 
-    <div class="container">
-        <div>
-            <!-- Div to add images via JS -->
-            <div class="row images d-flex justify-content-center"></div>
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-                <!-- The Close Button -->
-                <span class="close">&times;</span>
-                <!-- Modal Content (The Image) -->
-                <img class="modal-content" id="img01">
-            </div>
+    <!-- Cards and Contents -->
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <a href="../pages/colorGame.html" target="_blank" class="col-7 col-lg-3">
+                <div class="card text-white">
+                    <div id="colorGame" class="card-img-overlay">
+                        <h5 class="card-title">Color Game</h5>
+                        <p class="card-text">Color color, which color?</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../pages/musicalCircles.html" target="_blank" class="col-7 col-lg-3">
+                <div class="card text-white">
+                    <div id="melody" class="card-img-overlay">
+                        <h5 class="card-title">Musical Circles</h5>
+                        <p class="card-text">A delight to your eyes and ears.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="col-7 col-lg-3">
+                <div class="card text-white">
+                    <div id="coming" class="card-img-overlay">
+                        <h5 class="card-title">Coming soon...</h5>
+                        <p class="card-text"><i class="fas fa-spinner"></i></p>
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
 
@@ -101,6 +115,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- Custom JavaScript -->
     <script src="../assets/js/home.js"></script>
-    <script src="../assets/js/galleries.js"></script>
   </body>
 </html>

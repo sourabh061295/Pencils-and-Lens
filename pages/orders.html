@@ -8,10 +8,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
-    <!-- Local CSS stylesheets -->
+    <!-- Stylesheet for PC devices -->
     <link rel="stylesheet" href="../assets/css/home.css">
 
-    <!-- Load mobile phone stylesheet -->
+    <!-- Stylesheet for mobile devices -->
     <link rel="stylesheet" href="../assets/css/mobile.css">
 
     <!-- Google Fonts -->
@@ -39,18 +39,18 @@
             <!-- Navbar buttons -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto d-flex justify-content-between">
-                    <a class="nav-link galleries" href="../pages/art.html">
+                    <a class="nav-link galleries" href="../pages/artGallery.html">
                         <li class="nav-item">Art Collection</li>
                     </a>
-                    <a class="nav-link galleries" href="../pages/photo.html">
+                    <a class="nav-link galleries" href="../pages/photoGallery.html">
                         <li class="nav-item">Image Gallery</li>
                     </a>
-                    <a class="nav-link galleries" id="activepage" href="../pages/order.html">
+                    <a class="nav-link galleries" id="activePage" href="#">
                         <li class="nav-item">Orders</li>
                     </a>
                 </ul>
                 <ul class="nav navbar-nav ml-auto">
-                    <a href="../pages/games.html">
+                    <a href="../pages/bonus.html">
                         <li class="nav-item"><button class="glow-on-hover" type="button">World of Colors!</button></li>
                     </a>
                 </ul>
@@ -86,7 +86,7 @@
         </div>
         <div class="row d-flex justify-content-around">
             <!-- Image slideshow -->
-            <div id="imagedisplay" class="col-8 col-lg-5"></div>
+            <div id="imageDisplay" class="col-8 col-lg-5"></div>
             <div class="tabs col-8 d-block d-lg-none mt-5">Get Quotation<hr></div>
             <!-- Form -->
             <div class="col-8 col-lg-5">
@@ -152,7 +152,7 @@
                         <input type="date" class="form-control" aria-label="date" aria-describedby="basic-addon1" required>
                     </div>
                     <div class="form-group">
-                        <label for="textareainput">Remarks [Optional]: </label>
+                        <label for="textAreaInput">Remarks [Optional]: </label>
                         <textarea class="form-control" id="textareainput" rows="4" placeholder="Have any special request or comments?"></textarea>
                     </div>
                     <div class="d-flex justify-content-center">
@@ -211,6 +211,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- Custom JavaScript -->
     <script src="../assets/js/home.js"></script>
-    <script src="../assets/js/order.js"></script>
+    <script src="../assets/js/orders.js"></script>
   </body>
 </html>

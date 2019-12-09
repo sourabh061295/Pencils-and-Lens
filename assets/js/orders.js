@@ -15,9 +15,9 @@ var img_list = ["https://i.pinimg.com/originals/ec/4e/80/ec4e8080b790e8f5ea6c973
 var idx = 0;
 
 // Function to change image every interval
-function changeimg() {
+function changeImg() {
     // Fade out old image
-    $('#imagedisplay').fadeOut('slow', function() {
+    $('#imageDisplay').fadeOut('slow', function() {
         // Change background image
         $(this).css("background-image", "url("+img_list[idx]+")");  
         // Fade in new image
@@ -28,4 +28,4 @@ function changeimg() {
 }
 
 // Trigger Slideshow, interval - 3 seconds
-setInterval(changeimg, 3000);
+setInterval(changeImg, 3000);
