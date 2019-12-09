@@ -1,4 +1,5 @@
 
+// Image link list for slideshow
 var img_list = ["https://i.pinimg.com/originals/ec/4e/80/ec4e8080b790e8f5ea6c9738e943de38.jpg",
                 "https://i.pinimg.com/originals/e5/98/d6/e598d6062411d6b3db75018730e60781.jpg",
                 "https://i.pinimg.com/originals/68/f2/3f/68f23f0df231b5356548d4a14b66c746.jpg",
@@ -10,14 +11,21 @@ var img_list = ["https://i.pinimg.com/originals/ec/4e/80/ec4e8080b790e8f5ea6c973
                 "https://i.pinimg.com/originals/32/c5/b6/32c5b6c7727303dbd70486c277a5e5b1.jpg",
                 "https://i.pinimg.com/originals/b5/53/98/b55398629f9718bbbb2182df3adb7a51.jpg",
                 "https://i.pinimg.com/originals/b3/19/d6/b319d6c1d43c04c142db087ce61194a3.jpg"];
+// Index
 var idx = 0;
 
+// Function to change image every interval
 function changeimg() {
+    // Fade out old image
     $('#imagedisplay').fadeOut('slow', function() {
+        // Change background image
         $(this).css("background-image", "url("+img_list[idx]+")");  
+        // Fade in new image
         $(this).fadeIn('slow');
     });
+    // Update index
     idx = ((idx+1) % img_list.length);
 }
 
+// Trigger Slideshow, interval - 3 seconds
 setInterval(changeimg, 3000);
