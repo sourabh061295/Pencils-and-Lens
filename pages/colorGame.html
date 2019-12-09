@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Color Game</title>
-	<link rel = "icon" href = "../data/images/colorgame.png" type = "image/x-icon"> 
-	<link rel="stylesheet" type="text/css" href="../assets/css/home.css">
+	<head>
+		<title>Color Game</title>
+		<!-- Tab icon -->
+		<link rel = "icon" href = "../data/images/colorgame.png" type = "image/x-icon"> 
+		<!-- Local CSS stylesheets -->
+		<link rel="stylesheet" type="text/css" href="../assets/css/home.css">
+		<!-- Google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Expletus+Sans|Philosopher:400,700|Satisfy&display=swap" rel="stylesheet">
+	</head>
 
-	<link href="https://fonts.googleapis.com/css?family=Expletus+Sans|Philosopher:400,700|Satisfy&display=swap" rel="stylesheet">
-</head>
-<body id="guessColor"class="animate fadeIn delay">
-	<h1 id="gameTitle">
-		The Great 
-		<br>
-		<span id="colorDisplay">RGB</span> 
-		<br>
-		Color Game
-	</h1>
+	<body id="guessColor"class="animate fadeIn delay">
+		<!-- Banner -->
+		<h1 id="gameTitle">
+			The Great 
+			<br>
+			<span id="colorDisplay">RGB</span> 
+			<br>
+			Color Game
+		</h1>
 
-	<div id="stripe">
-		<button id="reset" class="gameButton">New Colors</button>
-		<span id="message"></span>
-		<button class="mode gameButton">Easy</button>
-		<button class="mode selected gameButton">Hard</button>
-	</div>
+		<!-- Button tray -->
+		<div id="stripe">
+			<button id="reset" class="gameButton">New Colors</button>
+			<span id="message"></span>
+			<button class="mode gameButton">Easy</button>
+			<button class="mode selected gameButton">Hard</button>
+		</div>
 
+		<!-- Color boxes -->
 		<div id="container">
 			<div class="square"></div>
 			<div class="square"></div>
@@ -32,6 +38,7 @@
 			<div class="square"></div>
 		</div>
 
-	<script type="text/javascript" src="../assets/js/colorGame.js"></script>
-</body>
+		<!-- Custom JavaScript -->
+		<script type="text/javascript" src="../assets/js/colorGame.js"></script>
+	</body>
 </html>
