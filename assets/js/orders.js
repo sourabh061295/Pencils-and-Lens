@@ -10,7 +10,10 @@ var img_list = ["https://i.pinimg.com/originals/ec/4e/80/ec4e8080b790e8f5ea6c973
                 "https://i.pinimg.com/originals/85/33/54/8533546f7f1126e68c30e61ccefb20ae.jpg",
                 "https://i.pinimg.com/originals/32/c5/b6/32c5b6c7727303dbd70486c277a5e5b1.jpg",
                 "https://i.pinimg.com/originals/b5/53/98/b55398629f9718bbbb2182df3adb7a51.jpg",
-                "https://i.pinimg.com/originals/b3/19/d6/b319d6c1d43c04c142db087ce61194a3.jpg"];
+                "https://i.pinimg.com/originals/b3/19/d6/b319d6c1d43c04c142db087ce61194a3.jpg",
+                "https://i.pinimg.com/originals/f5/a4/b0/f5a4b0b935e5435098b4c1c8297ed7c4.jpg",
+                "https://i.pinimg.com/originals/20/a2/e1/20a2e1ac7424476588ebafc81f29cac2.jpg",
+                "https://i.pinimg.com/originals/22/f8/8a/22f88a7de94401c6b0abb47c15df0ee4.jpg"];
 // Index
 var idx = 0;
 

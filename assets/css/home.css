@@ -197,7 +197,7 @@ a.nav-link.galleries:hover {
     box-shadow: 0px 8px 10px #98999b;
     background: url("../../data/images/home.png") center no-repeat;
     background-size: cover;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.3);
     background-blend-mode: lighten;
 }
 
@@ -441,12 +441,12 @@ div.col-8.col-md-4 {
 
 /* Modify form components */
 form {
-    font-size: 1.1em;
+    font-size: 1.4em;
     color: white;
 }
 
 /* Form focus styling */
-#textAreaInput:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="file"]:focus, input[type="date"]:focus, input[type="tel"]:focus {
+#textAreaInput:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="file"]:focus, input[type="tel"]:focus {
     border-color: rgba(126, 239, 104, 0.8);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
     outline: 0 none;
